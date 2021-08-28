@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/io_screen"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000"
+        android:gravity="right|bottom"
+        android:textColor="#fff"
+        android:fontFamily="@font/digital"
+        android:textSize="90sp"
+        android:maxLength="9"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/btnAC"
+                android:onClick="clearAll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/allClear"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btnNP"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/negativePositive"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btnP"
+                android:onClick="percentEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/percent"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btnDiv"
+                android:onClick="operatorEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/division"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/btn7"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/seven"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btn8"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/eight"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btn9"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/nine"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btnMul"
+                android:onClick="operatorEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/multiplication"
+                android:textColor="#000"
+                android:textSize="30sp"
+                tools:ignore="NestedWeights" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/btn4"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/four"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btn5"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/five"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btn6"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/six"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btnSub"
+                android:onClick="operatorEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/subtraction"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/btn1"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/one"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btn2"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/two"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btn3"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/three"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btnAdd"
+                android:onClick="operatorEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/addition"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/btn0"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="2"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/zero"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btnDot"
+                android:onClick="dotEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/lightWhite"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/dot"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/btnEqual"
+                android:onClick="equalEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:fontFamily="@font/digital"
+                android:gravity="center"
+                android:text="@string/equal"
+                android:textColor="#000"
+                android:textSize="40sp"
+                tools:ignore="NestedWeights" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
